@@ -4,6 +4,15 @@ from streamlit_calendar import calendar
 from datetime import timedelta
 import plotly.express as px
 
+import subprocess
+import sys
+
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+install("git+https://github.com/im-perativa/streamlit-calendar.git")
+
+
 
 st.set_page_config(page_title="Trading Account Summary", page_icon="📆")
 
