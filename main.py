@@ -1,9 +1,3 @@
-import streamlit as st
-import pandas as pd
-from streamlit_calendar import calendar
-from datetime import timedelta
-import plotly.express as px
-
 import subprocess
 import sys
 
@@ -13,6 +7,13 @@ def install(package):
 install("streamlit")
 install("git+https://github.com/im-perativa/streamlit-calendar.git")
 
+
+
+import streamlit as st
+import pandas as pd
+from streamlit_calendar import calendar
+from datetime import timedelta
+import plotly.express as px
 
 
 st.set_page_config(page_title="Trading Account Summary", page_icon="📆")
