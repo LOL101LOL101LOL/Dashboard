@@ -10,6 +10,7 @@ import sys
 def install(package):
     subprocess.check_call([sys.executable, "-m", "pip", "install", package])
 
+install("streamlit")
 install("git+https://github.com/im-perativa/streamlit-calendar.git")
 
 
